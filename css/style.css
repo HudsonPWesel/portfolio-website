@@ -96,8 +96,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-image: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
-  background: linear-gradient(16deg, #d9b5e3, #292b44);
+  background-color: #a9acd4;
   grid-column: 1 / -1; }
   .hero__text-container {
     display: grid;
@@ -288,12 +287,13 @@ body {
     text-align: center;
     color: #292b44;
     top: 1%;
+    color: #b4b3b3;
     background-color: rgba(234, 241, 255, 0.1);
     font-size: 4.8rem;
     border-radius: 10px; }
   .card__container {
     padding: 100rem;
-    background: linear-gradient(15deg, #dfb1e6, #5663b8);
+    background: linear-gradient(15deg, #3b4480, #171f57);
     padding: 5rem;
     padding-top: 12rem;
     display: grid;
@@ -303,7 +303,7 @@ body {
     column-gap: 25rem; }
     .card__container--website {
       padding: 0;
-      background: #fff;
+      background: #bdc5d3;
       display: grid;
       transition: all 0.2s cubic-bezier(0.12, 0, 0.39, 0);
       grid-template-rows: 19.8rem;
@@ -358,18 +358,32 @@ body {
         height: 20rem;
         height: 75%;
         transition: all 0.2s; }
+      .card__container--website-heading {
+        height: min-content; }
+        .card__container--website-heading-text {
+          font-size: 4.6rem;
+          letter-spacing: 1.2rem;
+          text-align: center;
+          padding: 5rem;
+          border-radius: 8px; }
+        .card__container--website-heading-text-1 {
+          font-family: 'Josefin Sans', sans-serif;
+          color: #c69963;
+          background-color: #292b44; }
+        .card__container--website-heading-text-2 {
+          color: #fff;
+          background-color: #4cbd8e; }
+        .card__container--website-heading-text-4 {
+          border-radius: 8px; }
       .card__container--website-1 {
         grid-column: 1;
         grid-row: 1; }
       .card__container--website-3 img {
         height: 35%;
-        align-self: center;
-        background: rgba(255, 255, 255, 0.454); }
+        align-self: center; }
       .card__container--website-4 img {
         height: 85%;
         filter: brightness(1.2); }
-      .card__container--website-5 img {
-        background-color: #f4f3f3; }
       .card__container--website-heading:link, .card__container--website-heading:visited {
         display: flex;
         align-self: center;
@@ -386,7 +400,7 @@ body {
         background-size: 100%; }
       .card__container--website-heading:hover, .card__container--website-heading:active {
         transform: translateY(-5px);
-        background-image: linear-gradient(120deg, #c594e5);
+        background-image: linear-gradient(120deg, #a7b0ca);
         background-size: 300%; }
       .card__container--website-subheading {
         text-align: center;
@@ -419,7 +433,7 @@ body {
     list-style: none;
     justify-content: center; }
     .about__tabbed li {
-      background-color: #131837;
+      background-color: #1b2845;
       padding: 1rem 1rem;
       height: min-content;
       transition: all 0.4s cubic-bezier(0.45, 0, 0.55, 1); }
