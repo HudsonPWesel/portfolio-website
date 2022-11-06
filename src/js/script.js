@@ -4,13 +4,10 @@ const tabItem = Array.from(document.querySelectorAll('.about__tabbed-item'));
 const tabIcons = Array.from(
 	document.querySelectorAll('.about__tabbed-item--icon')
 );
-
 const itemText = document.querySelector('.about__tabbed-item--text');
-
 const tabText = Array.from(
 	document.querySelectorAll('.about__tabbed-item--text')
 );
-
 const toggleClass = (elements, index, toggleClass) => {
 	elements[index].classList.toggle(toggleClass);
 };
@@ -97,4 +94,50 @@ tabIcons.forEach((element, index) => {
 			}
 		}
 	});
+});
+
+// SMOOTH SCROLLING
+
+// icon-integration__btn
+// card__container
+
+// Learn More & Integration Section
+const learnBtnScrollTo = document.querySelector('.hero__link');
+const integrationSection = document.querySelector('.icon-integration');
+
+// View Integrations & Cards Section
+const btnScrollTo = document.querySelector('.icon-integration__btn');
+const cardScrollTo = document.querySelector(
+	'.card__container--website-heading-1'
+);
+
+btnScrollTo.addEventListener('click', e => {
+	e.preventDefault();
+	// Relative to viewport
+	const s1coords = cardScrollTo.getBoundingClientRect();
+
+	// Scrolling Old
+
+	/*
+	window.scrollTo(
+		s1coords.left + window.pageXOffset,
+		s1coords.top + window.scrollY
+	);
+
+	window.scrollTo({
+		left: s1coords.left + window.pageXOffset,
+		top: s1coords.top + window.scrollY,
+		behavior: 'smooth',
+	});
+	*/
+
+	cardScrollTo.scrollIntoView({ behavior: 'smooth' });
+});
+
+learnBtnScrollTo.addEventListener('click', e => {
+	e.preventDefault();
+	// Relative to viewport
+	const s1coords = integrationSection.getBoundingClientRect();
+
+	integrationSection.scrollIntoView({ behavior: 'smooth' });
 });

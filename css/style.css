@@ -104,6 +104,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, max-content);
+    color: #f8f6f5;
+    font-size: 2.2rem;
     row-gap: 3rem; }
   .hero .heading__primary--hero {
     grid-column: 1 / -1; }
@@ -113,6 +115,8 @@ body {
     gap: 1rem;
     grid-row: 2;
     font-weight: 700; }
+    .hero .heading__secondary-container p {
+      font-size: 4.4rem; }
   .hero .heading__tertiary--hero {
     grid-row: 3; }
   .hero .subheading__primary--hero {
@@ -139,14 +143,15 @@ body {
     grid-column: 3; }
   .hero__link:link, .hero__link:visited {
     grid-row: 5;
-    width: 80%;
+    grid-column: 1;
+    width: 50%;
     display: inline-block;
-    padding: 3px;
+    padding: 5px 0px 5px 15px;
+    letter-spacing: 1px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     font-size: 2.6rem;
-    border-bottom: 1px solid #fff;
     transition: all 0.2s; }
   .hero__link:hover {
     background-color: #0e103e;
