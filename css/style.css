@@ -125,8 +125,7 @@ body {
     color: #332e34; }
   .hero__sidebar-section {
     display: grid;
-    grid-column: 3;
-    grid-template-columns: repeat(); }
+    grid-column: 3; }
   .hero__img-sidebar {
     position: absolute;
     grid-column: 3;
@@ -144,18 +143,20 @@ body {
   .hero__link:link, .hero__link:visited {
     grid-row: 5;
     grid-column: 1;
-    width: 50%;
+    width: 35%;
     display: inline-block;
-    padding: 5px 0px 5px 15px;
+    padding: 5px 5px 5px 5px;
     letter-spacing: 1px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+    text-align: center;
     transition: all 0.2s; }
   .hero__link:hover {
-    background-color: #0e103e;
+    background-color: #d4b4f8;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    color: #000f;
     transform: translateY(-2px); }
 
 .icon-integration {
@@ -186,7 +187,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
     grid-column: btn-start / btn-end;
     background-color: #444444;
     grid-row: 3;
@@ -196,10 +197,12 @@ body {
     border-radius: 8px;
     align-self: center; }
   .icon-integration__btn-icon {
-    font-size: 2.3rem; }
+    margin-top: 3px;
+    font-size: 2.3rem;
+    cursor: pointer;
+    width: 1fr; }
     .icon-integration__btn-icon--link:link, .icon-integration__btn-icon--link:visited {
-      text-decoration: none;
-      color: blue; }
+      text-decoration: none; }
   .icon-integration__btn {
     display: inline-block;
     font-size: 2.1rem;
@@ -209,7 +212,8 @@ body {
   .icon-integration--btn-container:hover {
     box-shadow: 1rem 2rem rgba(0, 0, 0, 0.1);
     transform: translate(1rem, -1rem);
-    font-weight: 600; }
+    font-weight: 600;
+    border: 2px solid #fff; }
   .icon-integration__icon-container {
     align-self: center; }
     .icon-integration__icon-container--img {
@@ -311,7 +315,7 @@ body {
       padding: 0;
       background: #fff;
       display: grid;
-      transition: all 0.2s cubic-bezier(0.12, 0, 0.39, 0);
+      transition: all 0.18s cubic-bezier(0.12, 0, 0.39, 0);
       grid-template-rows: 19.8rem;
       border-radius: 20px;
       row-gap: 3rem; }
@@ -361,7 +365,7 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10rem, max-content));
         grid-template-rows: repeat(2, 1.5rem);
-        row-gap: 1rem;
+        row-gap: 3rem;
         font-size: 1.4rem;
         color: #fff;
         align-self: center;

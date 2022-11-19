@@ -101,39 +101,34 @@ tabIcons.forEach((element, index) => {
 // icon-integration__btn
 // card__container
 
-// Learn More & Integration Section
+// Learn More & Integration Btns
 const learnBtnScrollTo = document.querySelector('.hero__link');
 const integrationSection = document.querySelector('.icon-integration');
-
+const arrowIcon = document.querySelector('.icon-integration__btn-icon');
 // View Integrations & Cards Section
 const btnScrollTo = document.querySelector('.icon-integration__btn');
 const cardScrollTo = document.querySelector(
 	'.card__container--website-heading-1'
 );
 
+// Scroll to cards
 btnScrollTo.addEventListener('click', e => {
 	e.preventDefault();
 	// Relative to viewport
 	const s1coords = cardScrollTo.getBoundingClientRect();
 
-	// Scrolling Old
+	cardScrollTo.scrollIntoView({ behavior: 'smooth' });
+});
 
-	/*
-	window.scrollTo(
-		s1coords.left + window.pageXOffset,
-		s1coords.top + window.scrollY
-	);
-
-	window.scrollTo({
-		left: s1coords.left + window.pageXOffset,
-		top: s1coords.top + window.scrollY,
-		behavior: 'smooth',
-	});
-	*/
+arrowIcon.addEventListener('click', e => {
+	e.preventDefault();
+	// Relative to viewport
+	const s1coords = cardScrollTo.getBoundingClientRect();
 
 	cardScrollTo.scrollIntoView({ behavior: 'smooth' });
 });
 
+// Scroll to integrationSection
 learnBtnScrollTo.addEventListener('click', e => {
 	e.preventDefault();
 	// Relative to viewport
